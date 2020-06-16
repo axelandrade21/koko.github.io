@@ -1,0 +1,50 @@
+
+body{
+	margin: 0;
+	background: #a8c0ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3f2b96, #a8c0ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#cabecera{
+	border-radius: 20px;
+	width: 100%;
+	display: block;
+	height: 70px;
+	background: #141E30;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#main{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+.contenedor{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 400px;
+	height: 100px;
+	background: #B2FEFA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0ED2F7, #B2FEFA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0ED2F7, #B2FEFA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+
+	margin: 15px;
+	border-radius: 20px;
+}
+
+audio{
+	margin-top: 5px;
+}
+
+h2{
+	margin-top: 10px;
+	font-family: 'Staatliches', cursive;
+}
