@@ -10,7 +10,7 @@
 	body{
 		margin: 0;
 		background-color: yellow;
-		flex-flow: scroll;
+		overflow: auto;
 	}
 
 
@@ -73,7 +73,7 @@
 	body{
 		margin: 0;
 		background-color: green;
-		flex-flow: scroll;
+		overflow: auto;
 	}
 
 
