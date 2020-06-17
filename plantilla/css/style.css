@@ -58,9 +58,23 @@
 		display: flex;
 		flex-direction: row;
 		height: 500px;
+		justify-content: center;
 
 
 	}
+
+	#links{
+		margin: 100px;
+		font-size: 30px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	a{
+		text-decoration: none;
+		margin: 10px;
+	}
+
 
 
 }   
@@ -119,9 +133,23 @@
 		display: flex;
 		flex-direction: row;
 		height: 500px;
+		justify-content: center;
 
 
 	}
+
+	#links{
+		margin: 100px;
+		font-size: 30px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	a{
+		text-decoration: none;
+		margin: 10px;
+	}
+
 
 }  
 
