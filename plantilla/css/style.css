@@ -51,6 +51,15 @@
 	.client{
 		border-radius: 50%;
 	}
+	
+	#footer{
+		background-color: green;
+		display: flex;
+		flex-direction: row;
+		height: 500px;
+
+
+	}
 
 
 }   
@@ -101,6 +110,15 @@
 
 	.client{
 		border-radius: 50%;
+	}
+	
+	#footer{
+		background-color: green;
+		display: flex;
+		flex-direction: row;
+		height: 500px;
+
+
 	}
 
 }  
