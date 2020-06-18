@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="build/botui.min.css">
+  <link rel="stylesheet" href="build/botui-theme-default.css">
+</head>
+<body>
+   <div class="botui-app-container" id="thermostat-bot">
+      <bot-ui></bot-ui>
+    </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="build/botui.js"></script>
+  <script>
+    var botui = new BotUI('thermostat-bot'),
+    temperature = 30;
+
+function init() {
+  botui.message
+    .bot({
+      delay: 700,
+      content: '¿Quieres una barra?'
+    })
+    .then(function () {
+      return botui.action.button({
+        delay: 1000,
+        action: [{
+          text: 'Sí',
+          value: '1'
+        }, {
+          text: 'No',
+          value: '2'
+        }
+
+        ]
+      })
+  }).then(function (res) {
+    if(res.value == '1') {
+      //changeTemp();
+      botui.message.add({
+      delay: 1000,
+      content: 'Ok, aqui voy en 3'
+    });
+
+      //changeTemp();
+      botui.message.add({
+      delay: 2000,
+      content: '2'
+    });
+
+      //changeTemp();
+      botui.message.add({
+      delay: 3000,
+      content: '1'
+    });
+
+      botui.message.add({
+      delay: 4000,  
+      content: 'Dicelo Zticma:'
+    });
+
+      botui.message.add({
+      delay: 5000,  
+      content: 'NO MAMES TE LA CREISTE'
+    }).then(init);
+
+      
+
+    } else {
+      botui.message.bot({
+        delay: 1200,
+        content: 'Pero bueno bro, eso queasio?'
+      }).then(init);
+    }
+  });
+}
+
+var changeTemp = function () {
+  botui.message
+    .bot({
+      delay: 500,
+      content: 'Change the temperature to ...'
+    })
+    .then(function () {
+      return botui.action.text({
+        delay: 1000,
+        action: {
+          size: 10,
+          icon: 'thermometer-empty',
+          value: temperature, // show the current temperature as default
+          sub_type: 'number',
+          placeholder: '26'
+        }
+      })
+    }).then(function (res) {
+      temperature = res.value; // save new value
+      return botui.message
+        .bot({
+          delay: 1500,
+          loading: true, // pretend like we are doing something
+          content: 'temperature set to ' + res.value
+        });
+    }).then(init); // loop to initial state
+}
+
+
+init();
+
+
+
+
+  </script>
+
+
+
+</body>
+</html>
