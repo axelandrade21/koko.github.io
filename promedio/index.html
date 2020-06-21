@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Cover Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/cover/">
+   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Lobster&display=swap" rel="stylesheet">
+   <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+     <link href="lightGallery-master/dist/css/lightgallery.css" rel="stylesheet">
+
+     <style type="text/css">
+            body{
+                background-color: #152836
+            }
+            .demo-gallery > ul {
+              margin-bottom: 0;
+            }
+            .demo-gallery > ul > li {
+                float: left;
+                margin-bottom: 15px;
+                margin-right: 20px;
+                width: 200px;
+            }
+            .demo-gallery > ul > li a {
+              border: 3px solid #FFF;
+              border-radius: 3px;
+              display: block;
+              overflow: hidden;
+              position: relative;
+              float: left;
+            }
+            .demo-gallery > ul > li a > img {
+              -webkit-transition: -webkit-transform 0.15s ease 0s;
+              -moz-transition: -moz-transform 0.15s ease 0s;
+              -o-transition: -o-transform 0.15s ease 0s;
+              transition: transform 0.15s ease 0s;
+              -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+              height: 100%;
+              width: 100%;
+            }
+            .demo-gallery > ul > li a:hover > img {
+              -webkit-transform: scale3d(1.1, 1.1, 1.1);
+              transform: scale3d(1.1, 1.1, 1.1);
+            }
+            .demo-gallery > ul > li a:hover .demo-gallery-poster > img {
+              opacity: 1;
+            }
+            .demo-gallery > ul > li a .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.1);
+              bottom: 0;
+              left: 0;
+              position: absolute;
+              right: 0;
+              top: 0;
+              -webkit-transition: background-color 0.15s ease 0s;
+              -o-transition: background-color 0.15s ease 0s;
+              transition: background-color 0.15s ease 0s;
+            }
+            .demo-gallery > ul > li a .demo-gallery-poster > img {
+              left: 50%;
+              margin-left: -10px;
+              margin-top: -10px;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              -webkit-transition: opacity 0.3s ease 0s;
+              -o-transition: opacity 0.3s ease 0s;
+              transition: opacity 0.3s ease 0s;
+            }
+            .demo-gallery > ul > li a:hover .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.5);
+            }
+            .demo-gallery .justified-gallery > a > img {
+              -webkit-transition: -webkit-transform 0.15s ease 0s;
+              -moz-transition: -moz-transform 0.15s ease 0s;
+              -o-transition: -o-transform 0.15s ease 0s;
+              transition: transform 0.15s ease 0s;
+              -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+              height: 100%;
+              width: 100%;
+            }
+            .demo-gallery .justified-gallery > a:hover > img {
+              -webkit-transform: scale3d(1.1, 1.1, 1.1);
+              transform: scale3d(1.1, 1.1, 1.1);
+            }
+            .demo-gallery .justified-gallery > a:hover .demo-gallery-poster > img {
+              opacity: 1;
+            }
+            .demo-gallery .justified-gallery > a .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.1);
+              bottom: 0;
+              left: 0;
+              position: absolute;
+              right: 0;
+              top: 0;
+              -webkit-transition: background-color 0.15s ease 0s;
+              -o-transition: background-color 0.15s ease 0s;
+              transition: background-color 0.15s ease 0s;
+            }
+            .demo-gallery .justified-gallery > a .demo-gallery-poster > img {
+              left: 50%;
+              margin-left: -10px;
+              margin-top: -10px;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              -webkit-transition: opacity 0.3s ease 0s;
+              -o-transition: opacity 0.3s ease 0s;
+              transition: opacity 0.3s ease 0s;
+            }
+            .demo-gallery .justified-gallery > a:hover .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.5);
+            }
+            .demo-gallery .video .demo-gallery-poster img {
+              height: 48px;
+              margin-left: -24px;
+              margin-top: -24px;
+              opacity: 0.8;
+              width: 48px;
+            }
+            .demo-gallery.dark > ul > li a {
+              border: 3px solid #04070a;
+            }
+            .home .demo-gallery {
+              padding-bottom: 80px;
+            }
+
+            
+            .numbers{
+              background-color: black;
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+            }
+
+            button{
+              font-family: 'Fredoka One', cursive;
+              opacity: 0.7;
+            }
+        </style>
+     
+  </head>
+  <body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <h3 class="masthead-brand animate__animated animate__heartBeat" style="font-family: 'Lobster', cursive;">ADesign</h3>
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link active" href="#"><h4 class="animate__animated animate__backInRight" style="font-family: 'Lobster', cursive; font-size: 16px;"></h4></a>
+        
+      </nav>
+    </div>
+  </header>
+
+  <main role="main" class="inner cover">
+    
+      <button onclick="agregarNumeros()"  class="btn btn-light  animate__animated animate__jackInTheBox animate__delay-1s" style="margin-bottom: 30px;">Agregue sus numeros para calcular el promedio</button>
+
+  <p id="numeros" style="font-size: 20px; font-family: 'Fredoka One', cursive;" ></p>
+  <br>
+  <button onclick="calcularPromedio()" class="btn btn-success animate__animated animate__backInLeft " >Calcular</button>
+  <button onclick="limpiar() "  class="btn btn-dark animate__animated animate__backInRight">Borrar todo</button>
+  <h1 id="resultado" style="font-family: 'Fredoka One', cursive; margin-top: 30px;"></h1>
+
+  <script type="text/javascript">
+    
+    var numeros = [];
+
+
+
+function agregarNumeros() {
+  var numero = prompt("Agregue el número");
+  numeros[numeros.length] = numero;
+
+ /* var tag = document.createElement("p");
+  tag.classList.add("numbers");
+  tag.innerHTML = numeros;
+  var element = document.getElementById("numeros");
+  element.appendChild(tag);*/
+  document.getElementById("numeros").innerHTML = numeros;
+ // document.getElementById("numeros").classList.add("numbers");
+}
+
+function calcularPromedio(){
+  
+  var suma = 0;
+  var promedio = 0;
+
+  if(numeros.length == 0){
+    alert("No hay valores");
+  }else{
+    for(var i = 0; i < numeros.length;i++){
+      suma+=Number(numeros[i]);
+    }
+
+    promedio = suma/numeros.length;
+    
+    document.getElementById("resultado").innerHTML = "El promedio es: "+promedio;
+    document.getElementById("resultado").classList.add('animate__animated', 'animate__tada');
+  }
+
+}
+
+function limpiar(){
+  
+  document.getElementById("numeros").innerHTML = "";
+  document.getElementById("resultado").innerHTML = "";
+  
+  numeros = [];
+  
+}
+
+
+  </script>
+  </main>
+
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p></p>
+    </div>
+  </footer>
+</div>
+<script type="text/javascript">
+  
+  var ul = document.getElementById("foo");
+var items = ul.getElementsByTagName("li");
+for (var i = 0; i < items.length; i++) {
+  alert(items[i].innerHTML);
+}
+
+
+</script>
+</body>
+</html>
