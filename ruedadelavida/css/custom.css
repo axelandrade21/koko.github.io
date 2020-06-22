@@ -1,0 +1,24 @@
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+	padding-bottom: 40px;
+	background: #56CCF2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+h2{
+	font-family: 'Squada One', cursive;
+	color: BLACK;
+}
+label,a{
+	color: white;
+	font-family: 'Amaranth', sans-serif;
+	font-size: 20px;
+}
+
+#canvas_container {  
+    width: 1000px;  
+    /*border: 1px solid #aaa;  */
+}  	
+
