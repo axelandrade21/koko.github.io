@@ -93,7 +93,7 @@ function main() {
   }
 
   function frameArea(sizeToFitOnScreen, boxSize, boxCenter, camera) {
-    const halfSizeToFitOnScreen = sizeToFitOnScreen * 1;
+    const halfSizeToFitOnScreen = sizeToFitOnScreen * 1.5;
     const halfFovY = THREE.MathUtils.degToRad(camera.fov * .5);
     const distance = halfSizeToFitOnScreen / Math.tan(halfFovY);
     // compute a unit vector that points in the direction the camera is now
