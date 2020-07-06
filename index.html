@@ -24,7 +24,7 @@ function main() {
   const fov = 45;
   const aspect = 2;  // the canvas default
   const near = 0.1;
-  const far = 200;
+  const far = 100;
   const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
   camera.position.set(0, 10, 20);
 
@@ -93,7 +93,7 @@ function main() {
   }
 
   function frameArea(sizeToFitOnScreen, boxSize, boxCenter, camera) {
-    const halfSizeToFitOnScreen = sizeToFitOnScreen * 0.5;
+    const halfSizeToFitOnScreen = sizeToFitOnScreen * 1;
     const halfFovY = THREE.MathUtils.degToRad(camera.fov * .5);
     const distance = halfSizeToFitOnScreen / Math.tan(halfFovY);
     // compute a unit vector that points in the direction the camera is now
