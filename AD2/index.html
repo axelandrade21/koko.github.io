@@ -589,8 +589,12 @@ main();
 
 
 <script>
+   var $html = $('html');
     var scene = document.getElementById('scene');
     var parallax = new Parallax(scene);
+    // Setup FastClick.
+  FastClick.attach(document.body);
+  $html.addClass(Hammer.HAS_TOUCHEVENTS ? 'touch' : 'mouse');vvv
   </script>
 
 </body>
