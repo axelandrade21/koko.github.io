@@ -30,6 +30,8 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
   />
 
+  
+
   <style type="text/css">
     #c {
   width: 60%;
@@ -38,6 +40,22 @@
 
 
 }
+
+#parallax-container{
+
+}
+#p-img{
+  width: 70%;
+}
+
+.mixBlnd
+{
+  background-blend-mode: screen;
+}
+
+
+
+
   </style>
 
   <!-- =======================================================
@@ -94,10 +112,20 @@
   <!-- /slide1 -->
 
   <!-- === Slide 2 === -->
-  <div class="slide story" id="about-us" data-slide="2">
+  <div class="slide story" id="lenguajes" data-slide="2">
     <div class="container">
       <div class="row title-row">
-        <div class="col-12 font-thin">Contrary to popular belief, <span class="font-semibold">Lorem Ipsum</span> <br>is not simply random text.</div>
+        <div id="parallax-container">
+            <ul id="scene">
+          <li class="layer" data-depth=".1"><img id="p-img" src="img/texto.png"></li>
+          <li class="layer" data-depth="0.3"><img id="p-img" src="img/css.png"></li>
+          <li class="layer" data-depth="0.2"><img id="p-img" src="img/html.png"></li>
+          <li class="layer" data-depth="0.3"><img id="p-img" src="img/java.png"></li>
+          <li class="layer" data-depth="0.2"><img id="p-img" src="img/js.png"></li>
+          <li class="layer" data-depth="0.3"><img id="p-img" src="img/php.png"></li>
+          <li class="layer" data-depth="0.2"><img id="p-img" src="img/c.png"></li>
+        </ul>
+    </div>
       </div>
       <!-- /row -->
       <div class="row line-row">
@@ -105,33 +133,33 @@
       </div>
       <!-- /row -->
       <div class="row subtitle-row">
-        <div class="col-12 font-thin">This is what <span class="font-semibold">we do best</span></div>
+        <div class="col-12 font-thin">Tecnología usada en <span class="font-semibold"> diferentes proyectos</span></div>
       </div>
       <!-- /row -->
       <div class="row content-row">
-        <div class="col-12 col-lg-3 col-sm-6">
+        <!-- <div class="col-12 col-lg-3 col-sm-6">
           <p><i class="fa fa-eye"></i></p>
           <h2 class="font-thin">Visual <span class="font-semibold">Identity</span></h2>
           <h4 class="font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
-        </div>
+        </div> -->
         <!-- /col12 -->
-        <div class="col-12 col-lg-3 col-sm-6">
+        <!-- <div class="col-12 col-lg-3 col-sm-6">
           <p><i class="fa fa-laptop"></i></p>
           <h2 class="font-thin">Web <span class="font-semibold">Design</span></h2>
           <h4 class="font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
-        </div>
+        </div> -->
         <!-- /col12 -->
-        <div class="col-12 col-lg-3 col-sm-6">
+        <!-- <div class="col-12 col-lg-3 col-sm-6">
           <p><i class="fa fa-tablet"></i></p>
           <h2 class="font-thin">Mobile <span class="font-semibold">Apps</span></h2>
           <h4 class="font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
-        </div>
+        </div> -->
         <!-- /col12 -->
-        <div class="col-12 col-lg-3 col-sm-6">
+        <!-- <div class="col-12 col-lg-3 col-sm-6">
           <p><i class="fa fa-pencil"></i></p>
           <h2 class="font-semibold">Development</h2>
           <h4 class="font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
-        </div>
+        </div> -->
         <!-- /col12 -->
       </div>
       <!-- /row -->
@@ -556,6 +584,14 @@ function main() {
 main();
 
 </script>
+
+<script src="js/parallax.js"></script>
+
+
+<script>
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
+  </script>
 
 </body>
 </html>
