@@ -589,12 +589,20 @@ main();
 
 
 <script>
-   var $html = $('html');
+   var $html = $('html');  
+$container = $('#parallax-container');
     var scene = document.getElementById('scene');
     var parallax = new Parallax(scene);
     // Setup FastClick.
   FastClick.attach(document.body);
-  $html.addClass(Hammer.HAS_TOUCHEVENTS ? 'touch' : 'mouse');vvv
+
+  // Add touch functionality.
+  if (Hammer.HAS_TOUCHEVENTS) {
+    $container.hammer({drag_lock_to_axis: true});
+    _.tap($html, 'a,button,[data-tap]');
+  }
+
+  $html.addClass(Hammer.HAS_TOUCHEVENTS ? 'touch' : 'mouse');
   </script>
 
 </body>
